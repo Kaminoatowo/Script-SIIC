@@ -9,7 +9,7 @@ double radice_q(double num){
     double Q = 1.0;
     int n = 0;
     for (n=0; n<MAX; n++){
-        Q = (Q/2) + (num / (2 * Q));
+        Q = (3*Q - num*Q*Q*Q) / 2;
     }
     return Q;
 }

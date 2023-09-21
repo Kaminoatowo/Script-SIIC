@@ -1,4 +1,4 @@
-package radice_quadrata.Tangenti;
+package radice_quadrata.Successione;
 import java.util.Scanner;
 public class RadiceNewton {
     public static int MAX = 10;
@@ -7,7 +7,7 @@ public class RadiceNewton {
         double Q = 1.0;
         int n = 0;
         for (n=0; n<MAX; n++){
-            Q = (Q/2) + (num / (2 * Q));
+            Q = (3*Q - num*Q*Q*Q) / 2;;
         }
         return Q;
     }
